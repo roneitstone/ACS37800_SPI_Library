@@ -563,9 +563,9 @@ ACS37800ERR ACS37800::readPowerActiveReactive(float *pActive, float *pReactive)
 // Read volatile register 0x28. Return the pactive averaged until a second.
 ACS37800ERR ACS37800::readPowerActiveSec(float *pActive)
 {
-  // Only use this function if you chose the correct combination of N, RMS_AVG_1 
-  // and  RMS_AVG_2 to achieve a one second average. You need to multiply the 
-  // returned value  of this function for |offset error|/(current sensing range)
+  // Use this function only if you have chosen the correct combination of N,
+  // RMS_AVG_1, and RMS_AVG_2 to obtain a one-second average. You need to 
+  // multiply the returned value by |offset error|/(current sensing range).
   ACS37800_REGISTER_28_t store;
   ACS37800ERR error = readRegister(&store.data.all, ACS37800_REGISTER_VOLATILE_28); // Read register 21
 
