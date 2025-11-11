@@ -1,7 +1,10 @@
 /*
   This is a library written for the I2C versions of the Allegro MicroSystems ACS37800 power monitor IC
   By Paul Clark @ SparkFun Electronics, January 21st, 2021
+  
   Eduardo Bruno,  adaptou para SPI
+  --------------------------------
+  Modified for SPI by Eduardo Bruno.
 
   https://github.com/sparkfun/SparkFun_ACS37800_Power_Monitor_Arduino_Library
 
